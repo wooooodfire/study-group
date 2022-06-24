@@ -47,7 +47,7 @@ footer{
 
 .content{
     display: block;
-    margin: 5em 5em;
+    margin: 5rem 10rem;
 }
 
 hr{
@@ -78,8 +78,11 @@ p{
     margin-left: 2rem;
 }
 
-@media (max-width:600px){
+@media (max-width:650px){
     .nav-link{
         display: none;
+    }
+    .content{
+        margin: 2.5rem 5rem;
     }
 }
