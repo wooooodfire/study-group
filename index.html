@@ -12,6 +12,7 @@
 			rel="stylesheet"
 		/>
 		<link rel="stylesheet" href="style.css" />
+		<link rel="stylesheet" href="nav-mobile.css">
 	</head>
 	<body>
 		<header>
@@ -21,18 +22,34 @@
 				<li><a href="#team">團隊願景</a></li>
 				<li><a href="#way">運作模式</a></li>
 				<li><a href="#welcome">我們歡迎</a></li>
-				<li><a href="#hw">作業完成</a></li>
+				<li><a href="#hw">完成作業</a></li>
 				<li><a href="#try">我想試試</a></li>
 			</ul>
+			<!-- The overlay -->
+			<div id="nav-mobile" class="overlay">
+				<!-- Button to close the overlay navigation -->
+				<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+				<!-- Overlay content -->
+				<div class="overlay-content">
+					<a href="#team">團隊願景</a>
+					<a href="#way">運作模式</a>
+					<a href="#welcome">我們歡迎</a>
+					<a href="#hw">完成作業</a>
+					<a href="#try">我想試試</a>
+				</div>
+			</div>
+			<!-- Use any element to open/show the overlay navigation menu -->
+			<button id="open-nav" onclick="openNav()">open</button>
+
 		</header>
 		<main>
 			<div id="t1">
-				<h1>ORANCHU<br/>Study Group</h1>
+				<h1>ORANCHU<br />Study Group</h1>
 			</div>
 			<div class="content">
 				<div class="content-block">
 					<h1 class="content-block-title" id="team">✨團隊願景</h1>
-					<hr/>
+					<hr />
 					<div class="content-block-description">
 						<p>
 							透過一群會網頁前後端技術的人們一同打造屬於我們的網站，在學習的過程中累積實力、累積作品，了解沒見識過的大小知識。
@@ -42,7 +59,7 @@
 				</div>
 				<div class="content-block">
 					<h1 class="content-block-title" id="way">🔧運作模式</h1>
-					<hr/>
+					<hr />
 					<div class="content-block-description">
 						<p>這個讀書會是 Orange 希望能夠找到一同學習網頁前後端的夥伴而舉辦的。</p>
 						<h3>主要的運作模式</h3>
@@ -58,7 +75,7 @@
 				</div>
 				<div class="content-block">
 					<h1 class="content-block-title" id="welcome">👩‍🎓我們歡迎</h1>
-					<hr/>
+					<hr />
 					<div class="content-block-description">
 						<p>我們歡迎已經對前後端有基礎知識的你加入!</p>
 						<h2>針對團隊我們主要需要兩面向的夥伴...</h2>
@@ -137,5 +154,7 @@
 		<footer>
 			<p>Copyright © 2022 WOODFiRE. All Rights Reserved</p>
 		</footer>
+		<script src="./app.js"></script>
 	</body>
+
 </html>
