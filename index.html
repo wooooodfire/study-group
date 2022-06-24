@@ -12,18 +12,18 @@
 			rel="stylesheet"
 		/>
 		<link rel="stylesheet" href="style.css" />
-		<link rel="stylesheet" href="nav-mobile.css">
+		<link rel="stylesheet" href="nav-mobile.css" />
 	</head>
 	<body>
 		<header>
 			<h1 class="logo">WOODFiRE</h1>
 			<!-- <button class="menu-toggle">MENU</button> -->
 			<ul class="nav-link">
-				<li><a href="#team">團隊願景</a></li>
-				<li><a href="#way">運作模式</a></li>
-				<li><a href="#welcome">我們歡迎</a></li>
-				<li><a href="#hw">完成作業</a></li>
-				<li><a href="#try">我想試試</a></li>
+				<li><a onclick="navClick(0)">團隊願景</a></li>
+				<li><a onclick="navClick(1)">運作模式</a></li>
+				<li><a onclick="navClick(2)">我們歡迎</a></li>
+				<li><a onclick="navClick(3)">完成作業</a></li>
+				<li><a onclick="navClick(4)">我想試試</a></li>
 			</ul>
 			<!-- The overlay -->
 			<div id="nav-mobile" class="overlay">
@@ -31,16 +31,15 @@
 				<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
 				<!-- Overlay content -->
 				<div class="overlay-content">
-					<a href="#team">團隊願景</a>
-					<a href="#way">運作模式</a>
-					<a href="#welcome">我們歡迎</a>
-					<a href="#hw">完成作業</a>
-					<a href="#try">我想試試</a>
+					<a onclick="navClick(0)">團隊願景</a>
+					<a onclick="navClick(1)">運作模式</a>
+					<a onclick="navClick(2)">我們歡迎</a>
+					<a onclick="navClick(3)">完成作業</a>
+					<a onclick="navClick(4)">我想試試</a>
 				</div>
 			</div>
 			<!-- Use any element to open/show the overlay navigation menu -->
-			<button id="open-nav" onclick="openNav()">open</button>
-
+			<button id="open-nav" onclick="openNav()">OPEN</button>
 		</header>
 		<main>
 			<div id="t1">
@@ -156,5 +155,4 @@
 		</footer>
 		<script src="./app.js"></script>
 	</body>
-
 </html>

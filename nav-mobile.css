@@ -1,4 +1,5 @@
 /* The Overlay (background) */
+/* 修改自 https://www.w3schools.com/howto/howto_js_curtain_menu.asp */
 .overlay {
 	/* Height & width depends on how you want to reveal the overlay (see JS below) */
 	height: 100%;
@@ -44,11 +45,31 @@
 	right: 45px;
 	font-size: 60px;
 }
+#open-nav {
+	display: inline;
+	background-color: white;
+	text-align: center;
+	border-radius: 10%;
+	padding: 5px;
+	border: 0;
+}
+#open-nav:hover {
+	background-color: #1a1a1a;
+	color: white;
+	transition: 0.2s;
+}
+#open-nav {
+	display: none;
+}
 
-@media screen and (max-height: 850px) {
-    #open-nav{
-        display: flex;
-    }
+@media (max-width: 850px) {
+	#open-nav {
+		display: inline-block;
+	}
+}
+
+/* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
+@media screen and (max-height: 450px) {
 	.overlay a {
 		font-size: 20px;
 	}

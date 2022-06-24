@@ -1,126 +1,125 @@
 html {
-    scroll-behavior: smooth;
+	scroll-behavior: smooth;
 }
 
-*{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    font-family: 'Noto Serif TC', serif;
-    font-size: 16px;
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	font-family: 'Noto Serif TC', serif;
+	font-size: 16px;
 }
-header{
-    display: flex;
-    justify-content: space-between;
-    background-color: white;
-    padding: 1.5rem;
-    margin: 0 10rem;
+header {
+	display: flex;
+	justify-content: space-between;
+	background-color: white;
+	padding: 1.5rem;
+	margin: 0 10rem;
 }
-.logo{
-    display: inline-block;
-    justify-content: flex-start;
-    color:black;
-    padding: 5px;
+.logo {
+	display: inline-block;
+	justify-content: flex-start;
+	color: black;
+	padding: 5px;
 }
-.nav-link{
-    display: flex;
-    list-style: none;
-}
-
-li, a{
-    font-weight: 500;
-    color:black;
+.nav-link {
+	display: flex;
+	list-style: none;
 }
 
-.nav-link li{
-    display: inline-block;
-    justify-content: flex-end;
-    padding:5px;
-    /* text-decoration: none; */
+li,
+a {
+	font-weight: 500;
+	color: black;
 }
 
-.nav-link li a{
-    text-decoration: none;
-}
-.nav-link li a:hover{
-    text-decoration:underline #6dc1ba solid;
-    text-underline-offset: 5px;
-}
-
-
-
-.content{
-    display: block;
-    margin: 5rem 10rem;
+.nav-link li {
+	display: inline-block;
+	justify-content: flex-end;
+	padding: 5px;
+	/* text-decoration: none; */
 }
 
-hr{
-    margin: 1em 0;
+.nav-link li a {
+	text-decoration: none;
 }
-p{
-    margin: 1em 0;
-}
-
-.content-block{
-    margin-bottom: 2rem;
+.nav-link li a:hover {
+	text-decoration: underline #6dc1ba solid;
+	text-underline-offset: 5px;
 }
 
-.content-block-title{
-    font-size: 24px;
-}
-.content-block-description{
-    line-height: 1.5em;
-}
-.content-block-description ul{
-    margin-top: .5rem;
-    margin-left: 3rem;
-}
-.content-block-description h2{
-    font-size:20px;
-    font-weight: 700;
-}
-.content-block-description h3{
-    font-size:16px;
-    font-weight: 700;
-    margin:1em 0;
-}
-#t1{
-    background-image: url("https://test1.neorangene.com/oranchustudygroup/t1.jpg");
-    background-size:cover;
-    height: 70vh;
-}
-#t1 h1{
-    position: absolute;
-    left:0;
-    right:0;
-    margin-left:auto;
-    margin-right: auto;
-    font-size: 40px;
-    top:35%;
-    text-align: center;
-    color:white;
+.content {
+	display: block;
+	margin: 5rem 10rem;
 }
 
-#t2{
-    margin-left: 2rem;
+hr {
+	margin: 1em 0;
+}
+p {
+	margin: 1em 0;
 }
 
-@media (max-width:850px){
-    .nav-link{
-        display: none;
-    }
-    .content{
-        margin: 2.5rem 3rem;
-    }
-    header{
-        margin:0 3rem;
-    }
+.content-block {
+	margin-bottom: 2rem;
 }
 
-footer{
-    margin:0;
-    padding: 2rem 1rem;
-    color:black;
-    text-align: center;
-    background-color: #6dc1ba;
+.content-block-title {
+	font-size: 24px;
+}
+.content-block-description {
+	line-height: 1.5em;
+}
+.content-block-description ul {
+	margin-top: 0.5rem;
+	margin-left: 3rem;
+}
+.content-block-description h2 {
+	font-size: 20px;
+	font-weight: 700;
+}
+.content-block-description h3 {
+	font-size: 16px;
+	font-weight: 700;
+	margin: 1em 0;
+}
+#t1 {
+	background-image: url('https://test1.neorangene.com/oranchustudygroup/t1.jpg');
+	background-size: cover;
+	height: 70vh;
+}
+#t1 h1 {
+	position: absolute;
+	left: 0;
+	right: 0;
+	margin-left: auto;
+	margin-right: auto;
+	font-size: 40px;
+	top: 35%;
+	text-align: center;
+	color: white;
+}
+
+#t2 {
+	margin-left: 2rem;
+}
+
+@media (max-width: 850px) {
+	.nav-link {
+		display: none;
+	}
+	.content {
+		margin: 2.5rem 3rem;
+	}
+	header {
+		margin: 0 3rem;
+	}
+}
+
+footer {
+	margin: 0;
+	padding: 2rem 1rem;
+	color: black;
+	text-align: center;
+	background-color: #6dc1ba;
 }
