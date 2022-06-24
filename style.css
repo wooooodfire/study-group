@@ -1,0 +1,68 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Noto Serif TC', serif;
+    font-size: 20px;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    padding: 30px 10%;
+}
+.logo{
+    display: inline-block;
+    justify-content: flex-start;
+    color:black;
+    padding: 5px;
+}
+.nav-link{
+    list-style: none;
+}
+
+li, a{
+    font-weight: 500;
+    color:black;
+}
+
+.nav-link li{
+    display: inline-block;
+    justify-content: flex-end;
+    padding:5px;
+    text-decoration: none;
+}
+
+.nav-link li a{
+    text-decoration: none;
+}
+.nav-link li a:hover{
+    text-decoration:underline cadetblue solid;
+    text-underline-offset: 5px;
+}
+footer{
+    color:black;
+    text-align: center;
+}
+
+main{
+    display: block;
+    margin: 5em 5em;
+}
+
+hr{
+    margin: 1em 0;
+}
+p{
+    margin: 1em 0;
+}
+
+#t2{
+    margin-left: 2rem;
+}
+
+@media (max-width:825px){
+    .nav-link{
+        display: none;
+    }
+}
